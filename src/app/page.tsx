@@ -24,7 +24,7 @@ export default function Page() {
       defaultTextAnimation="entrance-slide"
       borderRadius="sharp"
     >
-      <div id="nav" data-section="nav">
+      <div id="nav" data-section="nav" className="scroll-mt-24">
         <NavbarStyleMinimal brandName="SicilyScape" />
       </div>
       <div id="hero" data-section="hero" className={"scroll-mt-24 "}>
@@ -63,12 +63,12 @@ export default function Page() {
               {
                 title: "Custom Tours",
                 description: "Tailored experiences across Sicily.",
-                imageSrc={assetMap.find(a => a.id === "about-image")?.url ?? "/public/images/placeholder.webp"}
+                imageSrc: assetMap.find(a => a.id === "about-image")?.url ?? "/public/images/placeholder.webp"
               },
               {
                 title: "Historical Landmarks",
                 description: "Visit iconic heritage sites.",
-                imageSrc={assetMap.find(a => a.id === "about-image")?.url ?? "/public/images/placeholder.webp"}
+                imageSrc: assetMap.find(a => a.id === "about-image")?.url ?? "/public/images/placeholder.webp"
               }
             ]}
             title="Our Offerings"
@@ -140,16 +140,16 @@ export default function Page() {
                 title: "Explore",
                 items: [
                   { label: "About", href: "about" },
-                  { label: "Contact", href: "contact" },
-                ],
+                  { label: "Contact", href: "contact" }
+                ]
               },
               {
                 title: "Discover",
                 items: [
                   { label: "Blog", href: "blog" },
-                  { label: "Tours", href: "tours" },
-                ],
-              },
+                  { label: "Tours", href: "tours" }
+                ]
+              }
             ]}
             copyrightText="© 2023 SicilyScape"
           />
