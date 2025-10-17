@@ -12,7 +12,7 @@ import {
   Nunito
 } from "next/font/google";
 import "./globals.css";
-import {PostHogWrapper} from "@/components/PostHogWrapper";
+import { PostHogWrapper } from "@/components/PostHogWrapper";
 import AuroraBackground from "@/components/background/AuroraBackground";
 
 const interTight = Inter_Tight({
@@ -76,18 +76,25 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "SicilyScape: Discover Sicily's Beauty",
-  description: "Explore the culture, cuisine, and landscapes of Sicily with SicilyScape.",
+  title: "Sicily Vibes - Discover the Magic",
+  description: "Explore Sicily's beauty, history, and cuisine. Dive into an unforgettable Mediterranean experience.",
+  keywords: "Sicily, travel, Mediterranean, history, cuisine",
+  metadataBase: new URL("https://example.com"),
+  alternates: { canonical: "https://example.com" },
   openGraph: {
-    title: "SicilyScape: Discover Sicily's Beauty",
-    description: "Explore the culture, cuisine, and landscapes of Sicily with SicilyScape.",
-    images: [],
+    title: "Sicily Vibes - Discover the Magic",
+    description: "Explore Sicily's beauty, history, and cuisine. Dive into an unforgettable Mediterranean experience.",
+    images: [{
+      url: "https://images.pexels.com/photos/19143042/pexels-photo-19143042.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      alt: "Sicily Coastline"
+    }],
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: "SicilyScape: Discover Sicily's Beauty",
-    description: "Explore the culture, cuisine, and landscapes of Sicily with SicilyScape."
+    title: "Sicily Vibes - Discover the Magic",
+    description: "Explore Sicily's beauty, history, and cuisine. Dive into an unforgettable Mediterranean experience.",
+    images: ["https://images.pexels.com/photos/19143042/pexels-photo-19143042.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"]
   },
   robots: {
     index: true,
