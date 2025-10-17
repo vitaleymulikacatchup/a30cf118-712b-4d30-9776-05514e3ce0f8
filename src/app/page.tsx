@@ -100,7 +100,7 @@ export default function Page() {
                 category: "Travel",
                 title: "Exploring Sicily's Hidden Gems",
                 excerpt: "Discover the lesser-known beauty of Sicily.",
-                imageSrc={assetMap.find(a => a.id === "about-image")?.url ?? "/public/images/placeholder.webp"},
+                imageSrc: assetMap.find(a => a.id === "about-image")?.url ?? "/public/images/placeholder.webp",
                 authorName: "Gianna Rossi",
                 authorAvatar: "/avatar-1.jpg",
                 date: "March 10, 2023"
@@ -110,7 +110,7 @@ export default function Page() {
                 category: "Culture",
                 title: "Sicilian Cuisine: A Gastronomic Journey",
                 excerpt: "Taste the true flavors of Sicily.",
-                imageSrc={assetMap.find(a => a.id === "about-image")?.url ?? "/public/images/placeholder.webp"},
+                imageSrc: assetMap.find(a => a.id === "about-image")?.url ?? "/public/images/placeholder.webp",
                 authorName: "Luca Bianchi",
                 authorAvatar: "/avatar-2.jpg",
                 date: "February 20, 2023"
